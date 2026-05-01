@@ -11,6 +11,7 @@ import AppLayout from "./pages/AppLayout";
 import CityList from "./components/CityList";
 import { useState } from "react";
 import { useEffect } from "react";
+import CountryList from "./components/CountryList";
 
 function App() {
   const [cities, setCities] = useState([]);
@@ -24,7 +25,6 @@ function App() {
         const res = await fetch(`${BASE_URL}/cities`);
         const data = await res.json();
         setCities(data);
-        console.log(data);
       } catch (error) {
         alert(error);
       } finally {
@@ -53,7 +53,10 @@ function App() {
             path="cities"
             element={<CityList cities={cities} isLoading={isLoading} />}
           />
-          <Route path="countries" element={<p>Countries</p>} />
+          <Route
+            path="countries"
+            element={<CountryList cities={cities} isLoading={isLoading} />}
+          />
           <Route path="form" element={<p>Form</p>} />
         </Route>
         <Route path="/about" element={<About />} />
