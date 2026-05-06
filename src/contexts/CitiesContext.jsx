@@ -26,8 +26,6 @@ function CitiesProvider({ children }) {
     }
 
     fetchCities();
-
-    return () => {};
   }, [setCities]);
 
   async function getCity(id) {
@@ -36,6 +34,41 @@ function CitiesProvider({ children }) {
       const res = await fetch(`${BASE_URL}/cities/${id}`);
       const data = await res.json();
       setCurrentCity(data);
+    } catch (error) {
+      alert(error);
+    } finally {
+      setIsLoading(false);
+    }
+  }
+
+  async function createCity(newCity) {
+    try {
+      setIsLoading(true);
+      const res = await fetch(`${BASE_URL}/cities/`, {
+        method: "POST",
+        body: JSON.stringify(newCity),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
+      const data = await res.json();
+      setCities((cities) => [...cities, newCity]);
+
+      console.log(data);
+    } catch (error) {
+      alert(error);
+    } finally {
+      setIsLoading(false);
+    }
+  }
+
+  async function deleteCity(id) {
+    try {
+      setIsLoading(true);
+      await fetch(`${BASE_URL}/cities/${id}`, {
+        method: "DELETE",
+      });
+      setCities((cities) => cities.filter((city) => city.id !== id));
     } catch (error) {
       alert(error);
     } finally {
@@ -53,6 +86,8 @@ function CitiesProvider({ children }) {
         currentCity,
         setCurrentCity,
         getCity,
+        createCity,
+        deleteCity,
       }}
     >
       {children}

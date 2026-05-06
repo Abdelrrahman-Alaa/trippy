@@ -1,4 +1,3 @@
-import { useSearchParams } from "react-router-dom";
 import styles from "./Map.module.css";
 import {
   MapContainer,
@@ -15,6 +14,7 @@ import { useNavigate } from "react-router-dom";
 import { useGeolocation } from "../hooks/useGeoLocation";
 import Button from "./Button";
 import useUrlPosition from "../hooks/useUrlPosition";
+
 export default function Map() {
   const [mapPosition, setMapPosition] = useState([40, 0]);
   const { cities } = useCities();
@@ -23,7 +23,6 @@ export default function Map() {
     position: geoLocationPosition,
     getPosition,
   } = useGeolocation();
-
   const [mapLat, mapLng] = useUrlPosition();
 
   useEffect(() => {
@@ -56,7 +55,7 @@ export default function Map() {
           url="https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png"
         />
         {cities.map((city) => (
-          <Marker position={city.position} key={city.id}>
+          <Marker position={[city.position.lat, city.position.lng]}>
             <Popup>{city.notes}</Popup>
           </Marker>
         ))}
@@ -69,6 +68,11 @@ export default function Map() {
 
 function ChangeCenter({ position }) {
   const map = useMap();
+  useEffect(() => {
+    if (position && position.length === 2 && position[0] && position[1]) {
+      map.setView(position);
+    }
+  }, [position, map]);
   map.setView(position);
   return null;
 }

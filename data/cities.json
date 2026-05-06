@@ -1,40 +1,65 @@
 {
   "cities": [
     {
-      "cityName": "Lisbon",
-      "country": "Portugal",
-      "emoji": "🇵🇹",
-      "date": "2027-10-31T15:59:59.138Z",
-      "notes": "My favorite city so far!",
+      "cityName": "Riyadh",
+      "country": "Saudi Arabia",
+      "emoji": "https://flagcdn.com/24x18/sa.png",
+      "date": "2026-05-06T05:37:59.320Z",
+      "notes": "tst",
       "position": {
-        "lat": 38.727881642324164,
-        "lng": -9.140900099907554
+        "lat": "24.692751939490947",
+        "lng": "47.46642613446737"
       },
-      "id": 73930385
+      "id": "cJGu0LeQVBM"
     },
     {
-      "cityName": "Madrid",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2027-07-15T08:22:53.976Z",
-      "notes": "",
+      "cityName": "Cluis",
+      "country": "France",
+      "emoji": "https://flagcdn.com/24x18/fr.png",
+      "date": "2026-05-06T05:40:54.744Z",
+      "notes": "ss",
       "position": {
-        "lat": 40.46635901755316,
-        "lng": -3.7133789062500004
+        "lat": "46.5297465714555",
+        "lng": "1.767915072495323"
       },
-      "id": 17806751
+      "id": "VIL-bhbYxCo"
     },
     {
-      "cityName": "Berlin",
-      "country": "Germany",
-      "emoji": "🇩🇪",
-      "date": "2027-02-12T09:24:11.863Z",
-      "notes": "Amazing 😃",
+      "cityName": "Verghereto",
+      "country": "Italy",
+      "emoji": "https://flagcdn.com/24x18/it.png",
+      "date": "2026-05-06T05:41:11.546Z",
+      "notes": "ds",
       "position": {
-        "lat": 52.53586782505711,
-        "lng": 13.376933665713324
+        "lat": "43.838543225250966",
+        "lng": "12.145416926731809"
       },
-      "id": 98443197
+      "id": "SzA8RE9hYdI"
+    },
+    {
+      "cityName": "Ankara",
+      "country": "Turkiye",
+      "emoji": "https://flagcdn.com/24x18/tr.png",
+      "date": "2026-05-06T05:44:37.592Z",
+      "notes": "ss",
+      "position": {
+        "lat": "39.91314262671549",
+        "lng": "33.011168678661235"
+      },
+      "id": "lcHOstQq9qY"
+    },
+    {
+      "cityName": "Homs",
+      "country": "Syrian Arab Republic (the)",
+      "emoji": "https://flagcdn.com/24x18/sy.png",
+      "date": "2026-05-06T05:53:36.859Z",
+      "notes": "ss",
+      "position": {
+        "lat": "34.71544844005141",
+        "lng": "36.77222106665612"
+      },
+      "id": "KgU_A4K77qg"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }
