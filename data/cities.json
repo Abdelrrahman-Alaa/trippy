@@ -1,18 +1,6 @@
 {
   "cities": [
     {
-      "cityName": "Riyadh",
-      "country": "Saudi Arabia",
-      "emoji": "https://flagcdn.com/24x18/sa.png",
-      "date": "2026-05-06T05:37:59.320Z",
-      "notes": "tst",
-      "position": {
-        "lat": "24.692751939490947",
-        "lng": "47.46642613446737"
-      },
-      "id": "cJGu0LeQVBM"
-    },
-    {
       "cityName": "Cluis",
       "country": "France",
       "emoji": "https://flagcdn.com/24x18/fr.png",
@@ -37,28 +25,28 @@
       "id": "SzA8RE9hYdI"
     },
     {
-      "cityName": "Ankara",
-      "country": "Turkiye",
-      "emoji": "https://flagcdn.com/24x18/tr.png",
-      "date": "2026-05-06T05:44:37.592Z",
-      "notes": "ss",
+      "cityName": "Madrid",
+      "country": "Spain",
+      "emoji": "https://flagcdn.com/24x18/es.png",
+      "date": "2026-05-06T08:26:43.697Z",
+      "notes": "MD",
       "position": {
-        "lat": "39.91314262671549",
-        "lng": "33.011168678661235"
+        "lat": "40.38915975470674",
+        "lng": "-3.688921474887875"
       },
-      "id": "lcHOstQq9qY"
+      "id": "LKHiK9XtJcE"
     },
     {
-      "cityName": "Homs",
-      "country": "Syrian Arab Republic (the)",
-      "emoji": "https://flagcdn.com/24x18/sy.png",
-      "date": "2026-05-06T05:53:36.859Z",
-      "notes": "ss",
+      "cityName": "Cairo",
+      "country": "Egypt",
+      "emoji": "https://flagcdn.com/24x18/eg.png",
+      "date": "2026-05-06T08:49:32.063Z",
+      "notes": "CA",
       "position": {
-        "lat": "34.71544844005141",
-        "lng": "36.77222106665612"
+        "lat": "29.88587945141978",
+        "lng": "31.365113722501302"
       },
-      "id": "KgU_A4K77qg"
+      "id": "e4xlXK_4-SI"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
