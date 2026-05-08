@@ -35,18 +35,6 @@
         "lng": "-3.688921474887875"
       },
       "id": "LKHiK9XtJcE"
-    },
-    {
-      "cityName": "Cairo",
-      "country": "Egypt",
-      "emoji": "https://flagcdn.com/24x18/eg.png",
-      "date": "2026-05-06T08:49:32.063Z",
-      "notes": "CA",
-      "position": {
-        "lat": "29.88587945141978",
-        "lng": "31.365113722501302"
-      },
-      "id": "e4xlXK_4-SI"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
